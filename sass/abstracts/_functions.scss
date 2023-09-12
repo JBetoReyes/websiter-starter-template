@@ -8,3 +8,19 @@
         @error 'Color `#{$color}` does not exist.';
     }
 }
+
+@function fs($font-size) {
+    @if (map.has-key($font-sizes, $font-size)) {
+        @return map.get($font-sizes, $font-size);
+    } @else {
+        @error "$font-sizes doesn't include `#{$font-size}`.";
+    }
+}
+
+@function size($size) {
+    @if (map.has-key($sizes, $size)) {
+        @return map.get($sizes, $size);
+    } @else {
+        @error "$sizes doesn't include `#{$size}`.";
+    }
+}
