@@ -1,7 +1,7 @@
-$fs-sans: "Open Sans", sans-serif;
+$ff-sans: "Open Sans", sans-serif;
 
 $ff-base: $ff-sans;
-$ff-accent: $ff-serif;
+$ff-accent: $ff-sans;
 
 $font-sizes: (
   900: clamp(2.5rem, 0.5rem + 10vw, 5rem),
